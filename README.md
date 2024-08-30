@@ -1,2 +1,2 @@
 # personal-website-aditav0630
-My website
+Howdy! My name is Aditya Vontlin.

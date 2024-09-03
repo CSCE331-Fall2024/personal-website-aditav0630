@@ -1,13 +1,142 @@
-h1{
-    color: blue; /* This is a comment! */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
 }
 
-.blue_overline_text{
-    color:blue;
-    text-decoration: overline;
+/* Header Styling */
+header {
+    background-color: #00509e;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#red_underline_text{
-    color:red;
-    text-decoration: underline;
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
+
+/* Navigation Bar Styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #00509e;
+    color: #fff;
+}
+
+/* Section Styling */
+section {
+    margin: 40px 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00509e;
+}
+
+section p, section ul {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+section ul li {
+    padding-left: 1.2em;
+    text-indent: -1.2em;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+section ul li:before {
+    content: "•";
+    color: #00509e;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Links Styling */
+a {
+    color: #00509e;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #003f7d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 20px 10px;
+    }
+
+    footer {
+        position: relative;
+    }
 }

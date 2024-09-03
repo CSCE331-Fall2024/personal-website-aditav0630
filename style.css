@@ -1,4 +1,4 @@
-
+/* styles/style.css */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -12,20 +12,15 @@ body {
 header {
     background-color: #00509e;
     color: white;
-    padding: 50px 20px;
+    padding: 40px 20px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     margin: 0;
     letter-spacing: 2px;
-}
-
-header p {
-    font-size: 1.2em;
-    margin: 10px 0 0;
 }
 
 /* Navigation Bar Styling */
@@ -57,8 +52,10 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* Section Styling */
-section {
+/* Main Container Styling */
+#qualifications-container {
+    display: flex;
+    justify-content: space-between;
     margin: 40px 20px;
     padding: 20px;
     background-color: white;
@@ -66,15 +63,20 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #00509e;
+/* Section Styling */
+section {
+    flex: 1;
+    margin: 0 20px;
 }
 
-section p, section ul {
-    font-size: 1.2em;
-    margin-bottom: 15px;
+#skills, #interests {
+    max-width: 300px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00509e;
 }
 
 section ul {
@@ -96,47 +98,49 @@ section ul li:before {
     margin-right: 10px;
 }
 
-/* Footer Styling */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    position: fixed;
+section p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+/* PDF Viewer Styling */
+.pdf {
     width: 100%;
-    bottom: 0;
-}
-
-/* Links Styling */
-a {
-    color: #00509e;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-}
-
-a:hover {
-    color: #003f7d;
+    height: 500px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5em;
-    }
-    
-    nav ul {
+@media (max-width: 1024px) {
+    #qualifications-container {
         flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
+        align-items: center;
     }
 
     section {
-        margin: 20px 10px;
+        margin: 20px 0;
+        max-width: 100%;
     }
 
-    footer {
-        position: relative;
+    .pdf {
+        height: 400px;
     }
 }
+
+
+img {
+    border: 1px solid #0e1a53;
+    border-radius: 50%;
+    padding: 5px;
+    width: 100px;
+  }
+
+  .centerimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   width: 200px;
+    height: auto;
+  }

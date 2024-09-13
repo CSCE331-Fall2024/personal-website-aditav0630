@@ -4,28 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aditya Vontlin - Service</title>
-    <link rel="stylesheet" href="style.css">
+    <link id="page_style" rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Community Service</h1>
-    </header>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="qualifications.html">Qualifications</a></li>
+            <li><a href="service.html">Service</a></li>
             <li><a href="ai.html">AI-Generated</a></li>
+            <button class="button" onclick="togg()">Change Style</button>  
         </ul>
     </nav>
+    <header>
+        <h1>Community Service</h1>
+    </header>
     <section id="CS 120 Teaching assistant">
-        <h2>CS 120 Teaching assistant</h2>
-        <p>Worked as a teaching assistant for the introductory CS course, helping students with their homework during my office hours and explaining difficult to grasp concepts to them.</p>
+        <div><img class="smallimg" src="tamucsdep.png"></div>
+        <div><h2>CS 120 Teaching assistant</h2>
+            <p>Worked as a teaching assistant for the introductory CS course, helping students with their homework during my office hours and explaining difficult to grasp concepts to them.</p></div>
     </section>
-    <section id="Volunteering">
-        <h2>Houston Foodbank</h2>
-        <p>I have been to the houston food bank multiple times, helping move, sort and package food for those in need.</p>
+    <section id="HFB">
+        <div><img class="smallimg"  src="hfoodbank.png" ></div>
+        <div><h2>Houston Foodbank</h2>
+            <p>I have been to the <a class = "ext-link" target = "_blank" href = "https://www.houstonfoodbank.org/#"> Houston Food Bank</a> multiple times, giving back to my community. Some of my duties include sorting and packing food items, such as throwing out expired foods, as well as sorting perishable and non-perishable foods. I also helped in the warehouse organizing and restocking food items.</p></div>
     </section>
+    <section id="AP">
+        <div><img class="smallimg"  src="attackpoverty.png"></div>
+        <div> <h2>Attack Poverty</h2>
+            <p>I have volunteered with the non-profit organization <a class = "ext-link" target = "_blank" href = "https://attackpoverty.org/"> Attack Poverty</a>. My first stint involved distributing food during COVID-19 in their north rosenburg location, helping those that needed the helping hand during the pandemic. My other stint involved participating in their afterschool program where I helped elementary school kids with their homework.</p></div>
+    </section>
+    <footer>
+        
+    </footer>
 </body>
 </html>
 

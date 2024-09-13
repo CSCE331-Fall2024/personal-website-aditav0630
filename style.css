@@ -1,4 +1,4 @@
-/* styles/style.css */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -8,7 +8,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header Styling */
 header {
     background-color: #00509e;
     color: white;
@@ -23,7 +22,6 @@ header h1 {
     letter-spacing: 2px;
 }
 
-/* Navigation Bar Styling */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -52,7 +50,7 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* Main Container Styling */
+
 #qualifications-container {
     display: flex;
     justify-content: space-between;
@@ -63,7 +61,7 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Section Styling */
+
 section {
     flex: 1;
     margin: 0 20px;
@@ -89,21 +87,17 @@ section ul li {
     text-indent: -1.2em;
     margin-bottom: 10px;
     position: relative;
+    max-height: 175px;
 }
 
-section ul li:before {
-    content: "•";
-    color: #00509e;
-    font-weight: bold;
-    margin-right: 10px;
-}
+
 
 section p {
     font-size: 1.2em;
     margin-bottom: 15px;
 }
 
-/* PDF Viewer Styling */
+
 .pdf {
     width: 100%;
     height: 500px;
@@ -112,7 +106,6 @@ section p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
     #qualifications-container {
         flex-direction: column;
@@ -129,18 +122,95 @@ section p {
     }
 }
 
+.photocontainer{
+    padding-top: 50px;
+    /* margin: auto;
+    padding: auto;
+    width: 100%; */
+}
 
-img {
-    border: 1px solid #0e1a53;
-    border-radius: 50%;
-    padding: 5px;
+  .linkimg1{
+    height: 100px;
+    width: 100px;
+  }
+  .linkimg2{
+    height: 100px;
     width: 100px;
   }
 
-  .centerimg {
+  .button{
+ background-color: #333; 
+  border: none;
+  color: white;
+  padding: 0px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  }
+
+  .button:hover{
+    background-color: #00509e;
+    color: #fff;
+  }
+
+  .smallimg{
     display: block;
+    height: 175px;
+    width: 175px;
+    padding-top: 50px;
     margin-left: auto;
     margin-right: auto;
-   width: 200px;
-    height: auto;
   }
+
+  footer{
+    padding-bottom: 50px;
+  }
+
+
+.carousel__viewport {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.carousel__slide img {
+    min-height: 200px;
+    max-height: 275px;
+    min-width: 300px;
+    max-width: 425px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+.carousel__prev,
+.carousel__next {
+    display: none;
+    font-size: 0%; 
+} 
+
+.linksort{
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+
+  .carousel__viewport {
+    display: flex;
+    flex-wrap: wrap; /* Allows the items to wrap into multiple rows */
+    list-style-type: none;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    justify-content: center; /* Center the images */
+}
+
+
+.carousel__slide:nth-child(n+2) {
+    display: none; /* Hide all list items except the first */
+}
+

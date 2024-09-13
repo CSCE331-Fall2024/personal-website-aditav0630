@@ -4,48 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aditya Vontlin - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link id="page_style" rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Technical Portfolio</h1>
-    </header>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="qualifications.html">Qualifications</a></li>
             <li><a href="service.html">Service</a></li>
             <li><a href="ai.html">AI-Generated</a></li>
+            <button class="button" onclick="togg()">Change Style</button> 
         </ul>
     </nav>
+    <header>
+        <h1>Technical Portfolio</h1>
+    </header>
     <section id="projects">
         <h2>Projects</h2>
         <div class="project">
             <h3>CPU Track</h3>
-            <p>Built a tool to track CPU usage of processes using C++ and WinAPI.
-            Collected data on the CPU usage of different processes running. Used multi threading to store the metrics on a CSV while also updating the GUI that presented the data.
+            <p>Built a tool to track CPU usage of processes using C++ and <a class = "ext-link" target = "_blank" href = "https://learn.microsoft.com/en-us/windows/win32/api/"> WinAPI</a>.
+                I wrote a program to track CPU usage of multiple processes using C++ and WinAPI library. 
+                I Collected data on the CPU usage of different processes running, using the Performance Counter API. 
+                I Used multi-threading to store the metrics on a CSV while also updating the GUI that presented the data. 
+                This project provided useful info on which processes have high spikes in usage, and which processes utilized the CPU the most.
             </p>
         </div>
         <div class="project">
             <h3>Aggie Professor Search</h3>
-            <p>Constructed a full-stack web application for Texas A&M Students to better gauge classes they want to take, by
-                allowing them to view Professors GPA distribution, and rating, per ratemyprofessors.com.
-                Implemented the python libraries Selenium and scrapy to scrape the Texas A&M Grade distributions website, and
-                Ratemyprofessors.com. Utilized React to create the front-end portion of the website.
-                Solved the problem of having to visit multiple websites and having multiple pages open to view data on the quality
-                and difficulty at different classes at Texas A&M University</p>
+            <p>Constructed a full-stack web application for Texas A&M Students to better gauge classes they want to take, 
+                by allowing them to view Professors' GPA distribution, and rating, per ratemyprofessors.com. 
+                Implemented the Python libraries Selenium and Scrapy to scrape the Texas A&M Grade distributions website and Ratemyprofessors.com. 
+                Utilized React to create the front-end portion of the website. Solved the problem of having to visit multiple websites and having multiple pages open to view data on the quality and difficulty of different classes at Texas A&M University.</p>
         </div>
         <div class="project">
             <h3>Tally</h3>
-            <p>Created a social media app, Tally, with React Native, Deploying the expo platform.
-                Implemented the user interface including the login screen, different pages, and navigation bar.
-                Collaborated with team with no prior knowledge of react native, had working product in a few months.</p>
+            <p>I created a social media app, Tally, with <a class = "ext-link" target = "_blank" href = "https://reactnative.dev/"> React Native</a>, and am deploying the expo platform.
+                 I implemented the user interface including the login screen, different pages, and navigation bar.
+                  Collaborated with a team with no prior knowledge of react native, and had a working product in a few months. 
+                  The goal of the app was to increase collaboration between teams, or even just increase comradery in roommates by “gamifying” common tasks that needed to be done.
+                   This was done by allowing users to create or join different groups, as well as add tasks for each group. Each task that was completed rewarded the user with points.</p>
         </div>
         <div class="project">
             <h3>Go Phish</h3>
-            <p>Created a custom inbox, using tkinter gui, and the gmail api to access the user’s emails
-                The Custom inbox cross-refrences all the links in a given email with known malware links, and uses an AI model we
-                created to detect how likely the email is to be a phishing attempt.</p>
+            <p>Created a custom inbox, using Tkinter GUI, and the Gmail API to access the user’s emails.
+            The Custom inbox forwards all the emails from the user’s Gmail account, and then cross-references all the links in a given email with known malware links, 
+            and uses an AI model we created to detect how likely the email is to be a phishing attempt.</p>
         </div>
     </section>
 </body>

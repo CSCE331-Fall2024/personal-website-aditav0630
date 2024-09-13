@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aditya Vontlin - Qualifications</title>
-    <link rel="stylesheet" href="style.css">
+    <link id="page_style" rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Qualifications</h1>
-    </header>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="qualifications.html">Qualifications</a></li>
             <li><a href="service.html">Service</a></li>
             <li><a href="ai.html">AI-Generated</a></li>
+            <button class="button" onclick="togg()">Change Style</button> 
         </ul>
     </nav>
+    <header>
+        <h1>Qualifications</h1>
+    </header>
     <section id="qualifications-container">
         <section id="skills">
             <h2>Technical Skills</h2>
             <ul>
-                <li>C/C++, Java, Python, JavaScript, HTML/CSS, R, SQL</li>
+                <li><a class = "ext-link" target = "_blank" href = "https://cplusplus.com/"> C++</a>, Java, <a class = "ext-link" target = "_blank" href = "https://www.python.org/"> Python</a>, JavaScript, HTML/CSS, R, SQL</li>
                 <li>React, Node.js, Flask, React Native, MongoDB, Expo</li>
                 <li>pandas, NumPy, Matplotlib, WinAPI</li>
             </ul>
@@ -33,7 +36,9 @@
         </section>
         <section id="interests">
             <h2>Areas of Interest</h2>
-            <p>I am particularly interested in Computer Architecture and Machine Learning. I enjoy learning about how programs interact with the hardware they run on, as well as working on projects that involve complex problem-solving and implementing efficient algorithms.</p>
+            <p>I am particularly interested in <a class = "ext-link" target = "_blank" href = "https://engineering.tamu.edu/cse/research/areas/computer-architecture.html"> Computer Architecture</a> and <a class = "ext-link" target = "_blank" href = "https://engineering.tamu.edu/cse/research/areas/artificial-intelligence.html"> Machine Learning</a>.
+            I enjoy learning about how programs interact with the hardware they run on,
+             as well as working on projects that involve complex problem-solving and implementing efficient algorithms.</p>
         </section>
     </section>
 </body>

@@ -6,24 +6,81 @@
     <title>Aditya Vontlin - Home</title>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Aditya Vontlin's Portfolio</h1>
-        <p>Computer Science Major and Electrical Engineering Minor</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="qualifications.html">Qualifications</a></li>
-            <li><a href="service.html">Service</a></li>
-            <li><a href="ai.html">AI-Generated</a></li>
-        </ul>
-    </nav>
-    <section id="photo">
-        <img src="IMG_8340.jpg", class = "centerimg">
-    </section>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm Aditya Vontlin, a Computer Science major with a minor in Electrical Engineering. I have a strong passion for technology and have worked on various projects that showcase my technical skills and problem-solving abilities. Welcome to my portfolio, where you can explore my work, qualifications, and the ways I contribute to the community.</p>
+    <div class = "flexclass">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="qualifications.html">Qualifications</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="ai.html">AI-Generated</a></li>
+                <button class="button" onclick="togg()">Change Style</button> 
+                
+            </ul>
+        </nav>
+        <header>
+            <h1>Aditya Vontlin</h1>
+            <p>Computer Science Major and Electrical Engineering Minor</p>
+        </header>
+        <div class = "photocontainer">
+            <section class="carousel" class="photocontainer" aria-label="Gallery">
+                <ul class="carousel__viewport">
+                    <li id="carousel__slide1" class="carousel__slide">
+                        <img src="prof_photo.jpg">
+                        <div class="carousel__snapper">
+                            <a href="#carousel__slide6" class="carousel__prev">&lt;</a>
+                            <a href="#carousel__slide2" class="carousel__next">&gt;</a>
+                        </div>
+                    </li>
+                    <li id="carousel__slide2" class="carousel__slide">
+                        <img src="plane.JPG" alt="Image 2">
+                        <div class="carousel__snapper">
+                            <a href="#carousel__slide1" class="carousel__prev">&lt;</a>
+                            <a href="#carousel__slide3" class="carousel__next">&gt;</a>
+                        </div>
+                    </li>
+                    <li id="carousel__slide3"  class="carousel__slide">
+                        <img src="half_dome.jpg" alt="Image 3">
+                        <div class="carousel__snapper">
+                            <a href="#carousel__slide2" class="carousel__prev">&lt;</a>
+                            <a href="#carousel__slide4" class="carousel__next">&gt;</a>
+                        </div>
+                    </li>
+                    <li id="carousel__slide4" class="carousel__slide">
+                        <img src="cricket.JPG" alt="Image 4">
+                        <div class="carousel__snapper">
+                            <a href="#carousel__slide3" class="carousel__prev">&lt;</a>
+                            <a href="#carousel__slide5" class="carousel__next">&gt;</a>
+                        </div>
+                    </li>
+                    <li id="carousel__slide5" class="carousel__slide">
+                        <img src="baby_jail.jpg" alt="Image 5">
+                        <div class="carousel__snapper">
+                            <a href="#carousel__slide4" class="carousel__prev">&lt;</a>
+                            <a href="#carousel__slide6" class="carousel__next">&gt;</a>
+                        </div>
+                    </li>
+                    <li id="carousel__slide6" class="carousel__slide">
+                    <img src="marching_band.jpg" alt="Image 6">
+                    <div class="carousel__snapper">
+                        <a href="#carousel__slide5" class="carousel__prev">&lt;</a>
+                        <a href="#carousel__slide1" class="carousel__next">&gt;</a>
+                    </div>
+                </li>
+                </ul>
+            </section>
+        </div>
+        <section id="about">
+            <h2 style="text-align: center;">About Me</h2>
+            <p>Hi, I'm Aditya Vontlin, a Computer Science major with a minor in Electrical Engineering. I have a strong passion for technology and have worked on various projects that showcase my technical skills and problem-solving abilities. Welcome to my portfolio, where you can explore my work, qualifications, and the ways I contribute to the community.</p>
+        </section>
+        <section id = "links">
+                <div class="linksort">
+                    <a href="https://www.linkedin.com/in/aditya-vontlin-a387a2252/"> <img class="linkimg1" src="linkedinpng.png"> </a>
+                    <a href="https://github.com/vadit"> <img class="linkimg2" src="github-mark.png"> </a>
+                </div>
+        </section>
     </section>
 </body>
 </html>
+
